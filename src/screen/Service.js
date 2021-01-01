@@ -4,12 +4,12 @@ import {Text, SafeAreaView} from 'react-native';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-const Home = () => {
+const Service = () => {
   const nav = useNavigation();
   return (
     <SafeAreaView
       style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-      <Text>Home Screen</Text>
+      <Text>Service Screen</Text>
       <Icon name="rocket" size={20} color="#900" />
 
       <TouchableOpacity onPress={() => nav.navigate('Profile')}>
@@ -19,4 +19,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Service;

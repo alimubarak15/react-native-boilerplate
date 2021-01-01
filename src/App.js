@@ -1,13 +1,12 @@
 import React from 'react';
-import {SafeAreaView, StatusBar} from 'react-native';
 import {Provider} from 'react-redux';
 import {store} from './redux/store';
-import Home from './screen/Home';
+import Router from './Router';
 
 const App = () => {
   return (
     <Provider store={store}>
-      <Home />
+      <Router />
     </Provider>
   );
 };
