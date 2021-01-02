@@ -3,8 +3,11 @@ import React from 'react';
 import {Text, SafeAreaView} from 'react-native';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import {useSelector} from 'react-redux';
 
 const Home = () => {
+  const state = useSelector((state) => state.test);
+  console.log('home', state);
   const nav = useNavigation();
   return (
     <SafeAreaView
